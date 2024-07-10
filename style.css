@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans serif;
+    margin: 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    height: 108px;
+}
+
+h1 {
+    font-size: 26pt;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 36pt;
+    color: #000000;
+    margin: 30px;
+    border-radius: 30px;
+    padding: 6px;
+}
+
+small {
+    font-size: 16pt;
+}
+
+p {
+    margin: 0;
+    text-align: left;
+    padding: 0 0 20px;
+}
+
+footer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_header h1 {
+    margin: 20px 0 0;
+}
+
+
+.home {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 40px 50px;
+    background-color: #e6ecf5;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 40px 10px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px 60px;
+    align-items: center;
+    background-color: #e6ecf5;
+}
+
+.projects_row1 div,.projects_row2 div {
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 50px;
+    font-size: 40pt;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Agdasima", sans-serif;
+    z-index: 1;
+    color: transparent;
+}
+ in
+.language {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.cv {
+    display: none;
+}
+
+.project_header {
+    margin: 30px;
+}
+
+.language p {
+    text-align: left;
+}
+
+.skills img {
+    height: 100px;
+    width: 200px;
+}
+
+.about_me {
+    padding: 0 0 10px;
+}
+
+
+#contact_form {
+    width: 300px;
+}
+
+#cv {
+    display: none;
+}
+
+#github {
+    display: none;
+}
+
+#linkedin {
+    font-size: 30pt;
+}
+
+
+div i {
+    color: #000000;
+    font-size: 20pt;
+    margin: 0;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 0;
+    background-color: #FFFFFF;
+}
+
+#invoice:hover div {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 46pt;
+
+}
+
+#invoice div {
+    margin: 0;
+    font-size: 40pt;
+}
+
+#invoice {
+    background-image: url("/images/invoice.jpg");
+}
+
+.hairdresser {
+    background-image: url("/images/mobile_app.jpg");
+}
+
+@media screen and (min-width: 600px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_me {
+        display: flex;
+        justify-content: start;
+        margin: 0 230px;
+    }
+
+    .nav_icons {
+        display: flex;
+        flex-direction: row;
+        margin: 0 20px;
+
+    }
+
+    .about_me_para {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .about_me_para div {
+        width: 30rem;
+        padding: 0 20px;
+    }
+
+    .project_header {
+        margin: 30px 0 30px;
+    }
+
+    .projects {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .projects_row1 {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 0 28px;
+    }
+
+    .projects_row2 {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 0 28px;
+
+    }
+
+    .projects_row1 div, .projects_row2 div {
+        margin: 0 30px 10px;
+        width: 400px;
+        height: 300px;
+    }
+
+
+    #cv {
+        display: block;
+        color: #000000;
+        font-size: 30pt;
+    }
+
+    #github {
+        display: block;
+        color: #000000;
+        font-size: 30pt;
+    }
+
+    #invoice:hover div {
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 46pt;
+        color: #2A4875;
+
+    }
+
+    #invoice div {
+        margin: 0;
+    }
+
+    #invoice {
+        background-image: url("/images/invoice.jpg");
+    }
+
+    .hairdresser {
+        background-image: url("/images/mobile_app.jpg");
+    }
+
+}
