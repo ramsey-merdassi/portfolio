@@ -3,23 +3,25 @@
 }
 
 body {
-    font-family: sans serif;
     margin: 0;
     font-family: "Source Code Pro", monospace;
+    background-color: #e6ecf5;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
 }
 
 footer {
     height: 108px;
+    background-color: #ffffff;
 }
 
 h1 {
-    font-size: 26pt;
+    font-size: 22pt;
     text-align: center;
 }
 
@@ -48,8 +50,16 @@ small {
 
 p {
     margin: 0;
-    text-align: left;
     padding: 0 0 20px;
+
+}
+
+span {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20pt;
 }
 
 footer {
@@ -74,7 +84,7 @@ footer {
 .intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     padding: 30px 40px 50px;
     background-color: #e6ecf5;
 }
@@ -84,13 +94,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 10px 40px 10px;
+    background-color: #ffffff;
+
 }
 
 .skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 40px 60px;
+    padding: 20px 40px 40px;
     align-items: center;
     background-color: #e6ecf5;
 }
@@ -105,20 +117,26 @@ footer {
     justify-content: center;
     padding: 0;
     margin: 0 0 50px;
-    font-size: 40pt;
+    /*font-size: 10pt;*/
     border-radius: 5px;
     font-weight: bold;
     font-family: "Agdasima", sans-serif;
     z-index: 1;
-    color: transparent;
+    color: #2A4875;
+
 }
- in
+
 .language {
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 10px;
 }
 
+.competency {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 10px;
+}
 .contact {
     display: flex;
     flex-direction: row;
@@ -128,16 +146,36 @@ footer {
     padding: 10px;
 }
 
+.skills_comp_sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills_comp_sections div {
+    margin: 0 0 10px;
+}
+
+.list div {
+    margin: 0;
+}
+
+.list ul{
+    padding: 10px 0 0 30px;
+}
+
 .cv {
     display: none;
 }
 
 .project_header {
-    margin: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+
 }
 
 .language p {
     text-align: left;
+    padding: 0;
 }
 
 .skills img {
@@ -146,7 +184,8 @@ footer {
 }
 
 .about_me {
-    padding: 0 0 10px;
+    padding: 0 0 4px;
+    display: flex;
 }
 
 
@@ -177,30 +216,92 @@ div i {
     background-color: #FFFFFF;
 }
 
-#invoice:hover div {
+
+.invoice:hover div {
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: 46pt;
-
+    /*font-size: 38pt;*/
+    /*color: #2A4875;*/
 }
 
-#invoice div {
+.invoice div {
     margin: 0;
-    font-size: 40pt;
+    font-size: 20pt;
+
 }
 
-#invoice {
+.invoice {
     background-image: url("/images/invoice.jpg");
+}
+
+.hairdresser:hover div {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 38pt;
+    /*color: #2A4875;*/
+}
+
+.hairdresser div {
+    margin: 0;
+    font-size: 38pt;
+
 }
 
 .hairdresser {
     background-image: url("/images/mobile_app.jpg");
 }
 
+.interior:hover div {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 38pt;
+    /*color: #2A4875;*/
+}
+
+.interior div {
+    margin: 0;
+    font-size: 38pt;
+}
+
+.interior {
+    background-image: url("/images/interior.png");
+}
+
+.crm:hover div {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 38pt;
+    /*color: #2A4875;*/
+}
+
+.crm div {
+    margin: 0;
+}
+
+.crm {
+    background-image: url("/images/crm.jpg");
+}
+
+.competency p {
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+}
+
+ul div {
+    margin: 0;
+}
+
+
+
 @media screen and (min-width: 600px) {
 
     nav {
         display: flex;
         justify-content: space-between;
+    }
+
+    span {
+        color: transparent;
+        background-color: transparent;
     }
 
     .about_me {
@@ -223,18 +324,75 @@ div i {
         text-align: left;
     }
 
+    .list {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        padding: 0 20px;
+    }
+
+    .language {
+        padding: 15px 0 0 15px;
+        margin: 0;
+    }
+
+   .language p {
+       padding: 0;
+   }
+
+   .competency p {
+       padding: 5px 0 0 15px;
+   }
+
+    .skills_comp_sections {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .skills_comp_sections div {
+        margin: 0 10px;
+    }
+
     .about_me_para div {
         width: 30rem;
         padding: 0 20px;
     }
 
-    .project_header {
-        margin: 30px 0 30px;
-    }
-
     .projects {
         display: flex;
         flex-flow: row wrap;
+        padding: 80px 0 40px;
+    }
+
+    .project_header {
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*justify-content: center;*/
+        /*margin: 30px 0 30px;*/
+        /*writing-mode: vertical-rl;*/
+        /*text-orientation: upright;*/
+        transform: rotate(90deg);
+        position: absolute;
+        top: 950px;
+        left: 1150px;
+        /*transform-origin: center;*/
+        /*display: flex;*/
+        /*justify-content: end;*/
+        /*align-items: start;*/
+        /*unicode-bidi: isolate;*/
+        background-color: #ffffff;
+
+    }
+
+    .project_header h1 {
+        font-size: 26pt;
+        /*font-family: "Anton", sans-serif;*/
+        /*font-weight: 800;*/
+        /*font-style: normal;*/
+
     }
 
     .projects_row1 {
@@ -256,7 +414,6 @@ div i {
         height: 300px;
     }
 
-
     #cv {
         display: block;
         color: #000000;
@@ -269,23 +426,92 @@ div i {
         font-size: 30pt;
     }
 
-    #invoice:hover div {
+    .invoice:hover div span{
         background-color: rgba(255, 255, 255, 0.5);
-        font-size: 46pt;
-        color: #2A4875;
-
+        font-size: 28pt;
+        color: #000000;
+        background-color: #ffffff;
     }
 
-    #invoice div {
+    .invoice div{
         margin: 0;
     }
 
-    #invoice {
+    .invoice {
         background-image: url("/images/invoice.jpg");
+    }
+
+
+    .hairdresser:hover div span {
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 28pt;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    .hairdresser div {
+        margin: 0;
     }
 
     .hairdresser {
         background-image: url("/images/mobile_app.jpg");
     }
 
+    .interior:hover div span{
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 28pt;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    .interior div {
+        margin: 0;
+    }
+
+    .interior {
+        background-image: url("/images/interior.png");
+    }
+
+    .crm:hover div span {
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 28pt;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    .crm div {
+        margin: 0;
+    }
+
+    .crm {
+        background-image: url("/images/crm.jpg");
+    }
+
+/*exclusive styling to project pages*/
+
+    .project_head {
+        padding: 30px 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project_info {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    p {
+     width: 460px;
+    }
+
+    #project_img {
+        border-radius: 5px;
+        height: 500px;
+        margin: 0 40px;
+    }
 }
