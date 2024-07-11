@@ -51,6 +51,7 @@ small {
 p {
     margin: 0;
     padding: 0 0 20px;
+/*Just make sure to remove blank lines like this at the end of css blocks*/
 
 }
 
@@ -117,6 +118,7 @@ footer {
     justify-content: center;
     padding: 0;
     margin: 0 0 50px;
+    /*Remove any commented-out lines like this before code review*/
     /*font-size: 10pt;*/
     border-radius: 5px;
     font-weight: bold;
@@ -132,11 +134,14 @@ footer {
     padding: 10px;
 }
 
+/*Indentation here is a little odd:*/
+/*use code -> reformat-code in PHP storm to fix it*/
 .competency {
         background-color: #FFFFFF;
         border-radius: 10px;
         padding: 10px;
 }
+/*Put an empty line here to separate the css blocks out*/
 .contact {
     display: flex;
     flex-direction: row;
@@ -219,6 +224,7 @@ div i {
 
 .invoice:hover div {
     background-color: rgba(255, 255, 255, 0.5);
+    /*again, remove these commented-out lines*/
     /*font-size: 38pt;*/
     /*color: #2A4875;*/
 }
@@ -230,6 +236,9 @@ div i {
 }
 
 .invoice {
+    /*You may find that images don't show on Github pages,*/
+    /*if this is the case, remove the first / in these*/
+    /*URLs to make them relative:*/
     background-image: url("/images/invoice.jpg");
 }
 
@@ -293,7 +302,10 @@ ul div {
 
 
 @media screen and (min-width: 600px) {
-
+/*There's a lot of repetition here that isn't needed,*/
+/*for example if you've used display: flex on an element above*/
+/*you don't need to do it again here: just add the parts*/
+/*you want to change in the desktop version.*/
     nav {
         display: flex;
         justify-content: space-between;
@@ -367,6 +379,7 @@ ul div {
         padding: 80px 0 40px;
     }
 
+    /*Remove all these commented-out lines!*/
     .project_header {
         /*display: flex;*/
         /*flex-direction: row;*/
@@ -389,6 +402,7 @@ ul div {
 
     .project_header h1 {
         font-size: 26pt;
+        /*These too!*/
         /*font-family: "Anton", sans-serif;*/
         /*font-weight: 800;*/
         /*font-style: normal;*/
