@@ -15,14 +15,25 @@ nav {
     background-color: #ffffff;
 }
 
-footer {
-    height: 108px;
-    background-color: #ffffff;
-}
-
 h1 {
     font-size: 22pt;
     text-align: center;
+}
+
+/*.intro_p_dt {*/
+/*    display: none;*/
+/*}*/
+
+.intro_p1 {
+    display: none;
+}
+
+.intro_p2 {
+    display: none;
+}
+
+.container {
+    display: none;
 }
 
 h3 {
@@ -51,7 +62,6 @@ small {
 p {
     margin: 0;
     padding: 0 0 20px;
-
 }
 
 span {
@@ -67,6 +77,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 108px;
+    background-color: #ffffff;
 }
 
 .project_header h1 {
@@ -85,7 +97,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 30px 40px 50px;
+    padding: 30px 40px 30px;
     background-color: #e6ecf5;
 }
 
@@ -152,7 +164,7 @@ footer {
 }
 
 .skills_comp_sections div {
-    margin: 0 0 10px;
+    margin: 10px 0;
 }
 
 .list div {
@@ -160,7 +172,7 @@ footer {
 }
 
 .list ul{
-    padding: 10px 0 0 30px;
+    padding-left: 30px;
 }
 
 .cv {
@@ -290,9 +302,96 @@ ul div {
     margin: 0;
 }
 
+/*exclusive styling to project pages*/
+
+.project_head {
+    padding: 30px 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#project_img {
+    border-radius: 5px;
+    height: 300px;
+    width: 400px;
+    margin: 0 40px;
+}
+
+.project_p {
+    margin: 30px 40px 0 40px;
+}
 
 
 @media screen and (min-width: 600px) {
+
+    .intro_container {
+        width: 55%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /*margin: auto;*/
+    }
+
+    .intro_header {
+        height: 15%;
+        /*width: 50%;*/
+        display: flex;
+        justify-content: start;
+        align-items: start;
+
+    }
+
+    .intro_p {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .intro_p1 {
+        width: 50%;
+        display: flex;
+
+    }
+
+    .intro_p2 {
+        width: 50%;
+        padding-left: 30px;
+        display: flex;
+
+    }
+
+    .intro_p_mob {
+        display: none;
+    }
+
+    /*.p {*/
+    /*    width: 100px;*/
+    /*}*/
+
+
+    .page_container {
+        position: relative;
+        min-height: 20vh;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 
     nav {
         display: flex;
@@ -304,11 +403,34 @@ ul div {
         background-color: transparent;
     }
 
-    .about_me {
+    /*.contain1 {*/
+    /*    !*display: flex;*!*/
+    /*    justify-content: center;*/
+    /*    display: none;*/
+    /*}*/
+
+
+    .intro {
         display: flex;
-        justify-content: start;
-        margin: 0 230px;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 0;
+        margin: 0 auto;
     }
+
+    /*.about_me {*/
+    /*    !*display: flex;*!*/
+    /*    !*justify-content: start;*!*/
+    /*    !*!*display: block;*!*!*/
+    /*}*/
+
+    /*.about_me_para {*/
+    /*    !*display: flex;*!*/
+    /*    display: none;*/
+    /*    flex-direction: row;*/
+    /*    justify-content: start;*/
+    /*    text-align: left;*/
+    /*}*/
 
     .nav_icons {
         display: flex;
@@ -317,12 +439,7 @@ ul div {
 
     }
 
-    .about_me_para {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: left;
-    }
+
 
     .list {
         display: flex;
@@ -353,13 +470,14 @@ ul div {
     }
 
     .skills_comp_sections div {
-        margin: 0 10px;
+        margin: 10px 10px;
     }
 
-    .about_me_para div {
-        width: 30rem;
-        padding: 0 20px;
-    }
+    /*.about_me_para div {*/
+    /*    width: 30rem;*/
+    /*    padding: 0 20px;*/
+    /*    !*color: white;*!*/
+    /*}*/
 
     .projects {
         display: flex;
@@ -376,7 +494,7 @@ ul div {
         /*text-orientation: upright;*/
         transform: rotate(90deg);
         position: absolute;
-        top: 950px;
+        top: 915px;
         left: 1150px;
         /*transform-origin: center;*/
         /*display: flex;*/
@@ -487,10 +605,20 @@ ul div {
         background-image: url("/images/crm.jpg");
     }
 
+    /*.intro_p_dt {*/
+    /*    display: block;*/
+    /*}*/
+
+
+
+
+
+
+
 /*exclusive styling to project pages*/
 
     .project_head {
-        padding: 30px 0 ;
+        padding: 30px 0 130px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -499,19 +627,34 @@ ul div {
 
     .project_info {
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: start;
         text-align: left;
-        margin: 20px;
         padding: 10px;
     }
 
     p {
-     width: 460px;
+        width: 460px;
+        margin: 0;
+    }
+
+    .project_p {
+        margin: 0;
     }
 
     #project_img {
         border-radius: 5px;
-        height: 500px;
+        height:340px;
+        width: 480px;
         margin: 0 40px;
     }
 }
+
+/*@media screen and (min-width: 1000px) {*/
+
+/*    .project_head {*/
+/*        padding: 0 0 442px;*/
+/*    }*/
+
+/*}*/
