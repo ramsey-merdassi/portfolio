@@ -1,3 +1,4 @@
+/* Consistent styling across all pages*/
 * {
     box-sizing: border-box;
 }
@@ -5,7 +6,17 @@
 body {
     margin: 0;
     font-family: "Source Code Pro", monospace;
-    background-color: #e6ecf5;
+    /*background-color: #e6ecf5;*/
+    background: #141E30;
+ /* Chrome 10-25, Safari 5.1-6 */
+ background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: linear-gradient(-45deg, #35577D, #141E30);
+}
+
+h1 {
+    font-size: 22pt;
+    text-align: center;
 }
 
 nav {
@@ -15,26 +26,80 @@ nav {
     background-color: #ffffff;
 }
 
-h1 {
-    font-size: 22pt;
-    text-align: center;
+footer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108px;
+    background-color: #ffffff;
 }
 
-/*.intro_p_dt {*/
-/*    display: none;*/
-/*}*/
 
-.intro_p1 {
-    display: none;
+/************ Index page ************/
+
+/* About me */
+.about-me {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 540px;
 }
 
-.intro_p2 {
-    display: none;
+.about-me h1 {
+    color: #fff;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
-.container {
-    display: none;
+.about-me p {
+    background-color: #fff;
+    width: 460px;
 }
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.intro-p {
+    background-color: #fff;
+    display: flex;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 6px;
+}
+
+.intro-p a:visited {
+    color: blue;
+}
+
+/* Projects */
+
+
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    padding: 20px 40px 140px;
+    align-items: center;
+    /*background-color: #e6ecf5;*/
+        background: #141E30;
+ /* Chrome 10-25, Safari 5.1-6 */
+ background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: linear-gradient(-45deg, #35577D, #141E30);
+}
+
+.skills h1 {
+    color: #fff;
+}
+
+/* to sort out */
 
 h3 {
     margin: 0;
@@ -72,15 +137,6 @@ span {
     font-size: 20pt;
 }
 
-footer {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 108px;
-    background-color: #ffffff;
-}
-
 .project_header h1 {
     margin: 20px 0 0;
 }
@@ -93,13 +149,10 @@ footer {
     padding: 10px;
 }
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 30px 40px 30px;
-    background-color: #e6ecf5;
-}
+/*.intro {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
 .projects {
     display: flex;
@@ -108,15 +161,6 @@ footer {
     padding: 10px 40px 10px;
     background-color: #ffffff;
 
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 40px 40px;
-    align-items: center;
-    background-color: #e6ecf5;
 }
 
 .projects_row1 div,.projects_row2 div {
@@ -242,7 +286,7 @@ div i {
 }
 
 .invoice {
-    background-image: url("images/invoice.jpg");
+    background-image: url("images/bucket_list.webp");
 }
 
 .hairdresser:hover div {
@@ -258,7 +302,8 @@ div i {
 }
 
 .hairdresser {
-    background-image: url("images/mobile_app.jpg");
+    background-image: url("images/film_quote_game.png");
+    background-size: contain;
 }
 
 .interior:hover div {
@@ -305,11 +350,18 @@ ul div {
 /*exclusive styling to project pages*/
 
 .project_head {
-    padding: 30px 0 ;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.project_head p {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .project_info {
@@ -319,10 +371,10 @@ ul div {
     text-align: left;
 }
 
-#project_img {
+.project_head img {
     border-radius: 5px;
-    height: 300px;
-    width: 400px;
+    height: 420px;
+    width: 600px;
     margin: 0 40px;
 }
 
@@ -330,6 +382,22 @@ ul div {
     margin: 30px 40px 0 40px;
 }
 
+.external-links {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    justify-content: space-evenly;
+}
+
+a:visited {
+    color: #fff;
+}
+#link {
+    padding-bottom: 30px;
+}
 
 @media screen and (min-width: 600px) {
 
@@ -384,13 +452,6 @@ ul div {
 
     .page_container {
         position: relative;
-        min-height: 20vh;
-    }
-
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
     }
 
     nav {
@@ -556,7 +617,8 @@ ul div {
     }
 
     .invoice {
-        background-image: url("images/invoice.jpg");
+        background-image: url("images/bucket_list.webp");
+        background-size: contain;
     }
 
 
@@ -572,7 +634,8 @@ ul div {
     }
 
     .hairdresser {
-        background-image: url("images/mobile_app.jpg");
+        background-image: url("images/film_quote_game.png");
+        background-position: center;
     }
 
     .interior:hover div span{
@@ -625,18 +688,20 @@ ul div {
         align-items: center;
     }
 
+    .project_head h1 {
+        color: #fff;
+    }
+
     .project_info {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: start;
+        align-items: center;
         text-align: left;
         padding: 10px;
     }
 
     p {
         width: 460px;
-        margin: 0;
     }
 
     .project_p {
