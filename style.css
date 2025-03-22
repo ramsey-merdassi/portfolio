@@ -156,6 +156,7 @@ span {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     padding: 10px 40px 10px;
@@ -163,7 +164,7 @@ span {
 
 }
 
-.projects_row1 div,.projects_row2 div {
+.projects_row1 div, .projects_row2 div, .projects_row3 div{
     text-align: center;
     width: 400px;
     height: 300px;
@@ -273,67 +274,99 @@ div i {
 }
 
 
-.invoice:hover div {
+.collector-app-project:hover div {
     background-color: rgba(255, 255, 255, 0.5);
     /*font-size: 38pt;*/
     /*color: #2A4875;*/
 }
 
-.invoice div {
+.collector-app-project div {
     margin: 0;
     font-size: 20pt;
 
 }
 
-.invoice {
-    background-image: url("images/bucket_list.webp");
+.collector-app-project {
+    background-image: url('images/collector_app.png');
 }
 
-.hairdresser:hover div {
+.film-quote-project:hover div {
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 38pt;
     /*color: #2A4875;*/
 }
 
-.hairdresser div {
+.film-quote-project div {
     margin: 0;
     font-size: 38pt;
 
 }
 
-.hairdresser {
+.film-quote-project {
     background-image: url("images/film_quote_game.png");
     background-size: contain;
 }
 
-.interior:hover div {
+.job-listings-project:hover div {
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 38pt;
     /*color: #2A4875;*/
 }
 
-.interior div {
+.job-listings-project div {
     margin: 0;
     font-size: 38pt;
 }
 
-.interior {
-    background-image: url("images/interior.png");
+.job-listings-project {
+    background-image: url("images/job_listing.png");
 }
 
-.crm:hover div {
+.furniture-store-project:hover div {
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 38pt;
     /*color: #2A4875;*/
 }
 
-.crm div {
+.furniture-store-project div {
     margin: 0;
 }
 
-.crm {
-    background-image: url("images/crm.jpg");
+.furniture-store-project {
+    background-image: url("images/furniture_store.png");
 }
+
+/*Academy Portal */
+.academy-portal-project:hover div {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 38pt;
+    /*color: #2A4875;*/
+}
+
+.academy-portal-project div {
+    margin: 0;
+}
+
+.academy-portal-project {
+    background-image: url("images/academy_portal.png");
+}
+
+/*Journey Planner*/
+.journey-planner-project:hover div {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 38pt;
+    /*color: #2A4875;*/
+}
+
+.journey-planner-project div {
+    margin: 0;
+}
+
+.journey-planner-project {
+    background-image: url("images/journey_planner.png");
+}
+
+
 
 .competency p {
     padding: 0;
@@ -555,7 +588,7 @@ a:visited {
         /*text-orientation: upright;*/
         transform: rotate(90deg);
         position: absolute;
-        top: 915px;
+        top: 1200px;
         left: 1150px;
         /*transform-origin: center;*/
         /*display: flex;*/
@@ -584,10 +617,15 @@ a:visited {
         display: flex;
         flex-flow: row wrap;
         margin: 0 0 28px;
-
     }
 
-    .projects_row1 div, .projects_row2 div {
+    .projects_row3 {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 0 28px;
+    }
+
+    .projects_row1 div, .projects_row2 div, .projects_row3 div {
         margin: 0 30px 10px;
         width: 400px;
         height: 300px;
@@ -605,67 +643,99 @@ a:visited {
         font-size: 30pt;
     }
 
-    .invoice:hover div span{
+    .collector-app-project:hover div span{
         background-color: rgba(255, 255, 255, 0.5);
         font-size: 28pt;
         color: #000000;
         background-color: #ffffff;
     }
 
-    .invoice div{
+    .collector-app-project div{
         margin: 0;
     }
 
-    .invoice {
-        background-image: url("images/bucket_list.webp");
+    .collector-app-project {
+        background-image: url("images/collector_app.png");
         background-size: contain;
     }
 
 
-    .hairdresser:hover div span {
+    .film-quote-project:hover div span {
         background-color: rgba(255, 255, 255, 0.5);
         font-size: 28pt;
         color: #000000;
         background-color: #ffffff;
     }
 
-    .hairdresser div {
+    .film-quote-project div {
         margin: 0;
     }
 
-    .hairdresser {
+    .film-quote-project {
         background-image: url("images/film_quote_game.png");
         background-position: center;
     }
 
-    .interior:hover div span{
+    .job-listings-project:hover div span{
         background-color: rgba(255, 255, 255, 0.5);
         font-size: 28pt;
         color: #000000;
         background-color: #ffffff;
     }
 
-    .interior div {
+    .job-listings-project div {
         margin: 0;
     }
 
-    .interior {
-        background-image: url("images/interior.png");
+    .job-listings-project {
+        background-image: url("images/job_listing.png");
     }
 
-    .crm:hover div span {
+    .furniture-store-project:hover div span {
         background-color: rgba(255, 255, 255, 0.5);
         font-size: 28pt;
         color: #000000;
         background-color: #ffffff;
     }
 
-    .crm div {
+    .furniture-store-project div {
         margin: 0;
     }
 
-    .crm {
-        background-image: url("images/crm.jpg");
+    .furniture-store-project {
+        background-image: url("images/furniture_store.png");
+    }
+
+    /*Academy Portal*/
+    .academy-portal-project:hover div span {
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 28pt;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    .academy-portal-project div {
+        margin: 0;
+    }
+
+    .academy-portal-project {
+        background-image: url("images/academy_portal.png");
+    }
+
+    /*Journey Planner*/
+    .journey-planner-project:hover div span {
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 28pt;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    .journey-planner-project div {
+        margin: 0;
+    }
+
+    .journey-planner-project {
+        background-image: url("images/journey_planner.png");
     }
 
     /*.intro_p_dt {*/
@@ -708,12 +778,6 @@ a:visited {
         margin: 0;
     }
 
-    #project_img {
-        border-radius: 5px;
-        height:340px;
-        width: 480px;
-        margin: 0 40px;
-    }
 }
 
 /*@media screen and (min-width: 1000px) {*/
