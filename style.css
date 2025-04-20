@@ -98,7 +98,6 @@ nav {
 @media screen and (max-width: 769px) {
     .about-me p, ul {
         width: 80vw;
-        /*text-align: center;*/
         font-size: 0.9rem;
     }
 }
@@ -106,13 +105,11 @@ nav {
 @media screen and (min-width: 770px) and (max-width: 999px) {
     .about-me p, ul {
         width: 70vw;
-        font-size: 1rem;
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
     .about-me p, ul {
         width: 62vw;
-        font-size: 1rem;
     }
 }
