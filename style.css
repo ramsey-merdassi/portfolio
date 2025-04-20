@@ -106,13 +106,13 @@ nav {
 @media screen and (min-width: 770px) and (max-width: 999px) {
     .about-me p, ul {
         width: 70vw;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
     .about-me p, ul {
-        width: 60vw;
-        font-size: 0.9rem;
+        width: 62vw;
+        font-size: 1rem;
     }
 }
