@@ -6,8 +6,7 @@
 /*removes default margin*/
 body {
     margin: 0;
-    /*background-color: #009688;*/
-    background-image: url('images/0.2opacity_bg.png');
+    background-color: #009688;
 }
 
 /*removes underlines*/
