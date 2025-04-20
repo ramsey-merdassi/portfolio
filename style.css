@@ -95,20 +95,20 @@ nav {
     color: #212121;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 658px) {
     .about-me p, ul {
         width: 80vw;
         font-size: 0.9rem;
     }
 }
 
-@media screen and (min-width: 770px) and (max-width: 999px) {
+@media screen and (min-width: 659px) and (max-width: 884px) {
     .about-me p, ul {
         width: 70vw;
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1250px) {
+@media screen and (min-width: 885px) and (max-width: 1250px) {
     .about-me p, ul {
         width: 62vw;
     }
