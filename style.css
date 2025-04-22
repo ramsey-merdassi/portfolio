@@ -52,8 +52,8 @@ nav {
     .home-btn {
         width: 9rem;
         height: 6rem;
-        /*background-color: cyan;*/
         margin-top: 2rem;
+        /*background-color: cyan;*/
     }
 
     .nav-icons {
@@ -77,39 +77,52 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*background-color: green;*/
     padding-bottom: 4rem;
+    /*background-color: green;*/
 }
 
 .about-me p, ul {
     width: 54vw;
-    /*background-color: orange;*/
     color: #FFF;
     font-size: 1rem;
     margin-top: 1.8rem;
     margin-bottom: 0;
     font-family: 'Poppins', sans-serif;
+    /*background-color: blue;*/
 }
 
 .about-me a {
     color: #212121;
 }
 
-@media screen and (max-width: 658px) {
+@media screen and (max-width: 689px) {
     .about-me p, ul {
         width: 80vw;
         font-size: 0.9rem;
     }
 }
 
-@media screen and (min-width: 659px) and (max-width: 884px) {
+@media screen and (min-width: 690px) and (max-width: 770px) {
+    .about-me p, ul {
+        width: 76vw;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 950px) {
     .about-me p, ul {
         width: 70vw;
     }
 }
 
-@media screen and (min-width: 885px) and (max-width: 1250px) {
+@media screen and (min-width: 951px) and (max-width: 1068px) {
     .about-me p, ul {
-        width: 62vw;
+        width: 66vw;
+    }
+}
+
+@media screen and (min-width: 1069px) and (max-width: 1250px) {
+    .about-me p, ul {
+        width: 60vw;
     }
 }
