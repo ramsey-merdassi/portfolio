@@ -153,13 +153,13 @@ footer h3, footer i {
 }
 
 .email {
-    /*background-color: orange;*/
     display: flex;
+    /*background-color: orange;*/
 }
 
 .phone-no {
-    /*background-color: yellow;*/
     display: flex;
+    /*background-color: yellow;*/
 }
 
 @media screen and (max-width: 554px) {
