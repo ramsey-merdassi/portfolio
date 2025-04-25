@@ -7,6 +7,11 @@
 body {
     margin: 0;
     background-color: #009688;
+    /*background: #141E30;*/
+    /*!* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: -webkit-linear-gradient(-45deg, #35577D, #141E30);*/
+    /*!* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*background: linear-gradient(-45deg, #35577D, #141E30);*/
 }
 
 /*removes underlines*/
@@ -30,7 +35,7 @@ a:visited {
     color: #000;
 }
 
-.bx-download, .bxl-github, .bxl-linkedin {
+.bx-download, #github, .bxl-linkedin {
     color: #000;
     font-size: 2rem;
     padding-left: 1rem;
@@ -79,7 +84,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 4rem;
+    margin-bottom: 1rem;
     margin-top: 1rem;
     /*background-color: green;*/
 }
@@ -130,6 +135,59 @@ nav {
         width: 60vw;
     }
 }
+
+/*projects*/
+.projects {
+    display: flex;
+    justify-content: center;
+    /*background-color: #BDBDBD;*/
+}
+
+.collector-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    /*background-color: yellow;*/
+}
+
+.collector-app h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    /*background-color: red;*/
+}
+
+.bx-chevron-left, .bx-chevron-right {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#collector-app-img {
+    width: 36vw;
+    border-radius: 10px;
+    height: 41vh;
+}
+
+.project-links {
+    display: flex;
+    margin-top: 1rem;
+    /*background-color: blue;*/
+}
+
+.bx-link-external, #github-repo {
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    color: #FFF;
+}
+
 
 /*footer*/
 footer {
