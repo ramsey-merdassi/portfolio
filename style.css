@@ -100,6 +100,10 @@ nav {
 }
 
 @media screen and (max-width: 689px) {
+    .about-me p {
+        text-align: center;
+    }
+
     .about-me p, ul {
         width: 80vw;
         font-size: 0.9rem;
@@ -223,6 +227,7 @@ nav {
     .project-description {
         width: 80vw;
         font-size: 0.9rem;
+        text-align: center;
     }
 }
 
