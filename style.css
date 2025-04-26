@@ -217,7 +217,7 @@ nav {
     }
 
   .bx-link-external, #github-repo {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         /*margin: 0 1rem;*/
     }
 
@@ -273,10 +273,13 @@ footer h3, footer i {
     }
 
     .email {
+        /*display: flex;*/
+        width: 96vw;
         margin-top: 1rem;
     }
 
     .phone-no {
-        padding-right: 5.4rem;
+        /*padding-right: 5.4rem;*/
+        width: 96vw;
     }
 }
