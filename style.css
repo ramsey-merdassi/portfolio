@@ -7,11 +7,6 @@
 body {
     margin: 0;
     background-color: #009688;
-    /*background: #141E30;*/
-    /*!* Chrome 10-25, Safari 5.1-6 *!*/
-    /*background: -webkit-linear-gradient(-45deg, #35577D, #141E30);*/
-    /*!* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
-    /*background: linear-gradient(-45deg, #35577D, #141E30);*/
 }
 
 /*removes underlines*/
@@ -74,7 +69,7 @@ nav {
         /*background-color: orange;*/
     }
 
-    .bx {
+    .bx-download, #github, .bxl-linkedin {
         padding: 0 0 0.4rem;
     }
 }
@@ -139,22 +134,24 @@ nav {
 /*projects*/
 .projects {
     display: flex;
-    justify-content: center;
-    /*background-color: #BDBDBD;*/
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    /*background-color: #B3E5FC;*/
 }
 
-.collector-app {
+.project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40vw;
-    margin-bottom: 3rem;
+    width: 54vw;
+    margin-bottom: 0.4rem;
     font-family: 'Poppins', sans-serif;
     color: #FFF;
-    /*background-color: yellow;*/
+    /*background-color: #607D8B;*/
 }
 
-.collector-app h2 {
+.project h2 {
     font-size: 1.6rem;
     font-weight: 300;
 }
@@ -170,7 +167,7 @@ nav {
     cursor: pointer;
 }
 
-#collector-app-img {
+.project-img {
     width: 36vw;
     border-radius: 10px;
     height: 41vh;
@@ -186,6 +183,14 @@ nav {
     font-size: 1.6rem;
     margin: 0 1rem;
     color: #FFF;
+}
+
+.project-description {
+    width: 54vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    /*background-color: orange;*/
 }
 
 

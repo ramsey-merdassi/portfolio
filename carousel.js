@@ -1,4 +1,4 @@
-const image = document.querySelector('img')
+const image = document.querySelector(".project-img")
 const leftArrow = document.querySelector('.bx-chevron-left')
 const rightArrow = document.querySelector('.bx-chevron-right')
 
