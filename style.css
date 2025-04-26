@@ -103,7 +103,7 @@ nav {
 @media screen and (max-width: 689px) {
 
     .about-me p, ul {
-        width: 80vw;
+        width: 92vw;
         /*font-size: 0.9rem;*/
     }
 }
@@ -208,7 +208,7 @@ nav {
     .project-img {
         width: 80vw;
         /*height: 32vh;*/
-        object-fit: cover;
+        object-fit: none;
         /*object-position: center;*/
     }
 
@@ -223,7 +223,7 @@ nav {
     }
 
     .project-description {
-        width: 80vw;
+        width: 92vw;
         /*font-size: 0.9rem;*/
     }
 }
