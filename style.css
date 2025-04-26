@@ -110,7 +110,7 @@ nav {
 @media screen and (min-width: 690px) and (max-width: 770px) {
     .about-me p, ul {
         width: 76vw;
-        font-size: 0.9rem;
+        /*font-size: 0.9rem;*/
     }
 }
 
@@ -147,13 +147,13 @@ nav {
     align-items: center;
     width: 54vw;
     padding-bottom: 0.4rem;
-    font-family: 'Poppins', sans-serif;
     color: #FFF;
     /*background-color: #607D8B;*/
 }
 
 .project h2 {
     font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     /*background-color: green;*/
 }
@@ -199,14 +199,14 @@ nav {
 
 @media screen and (max-width: 689px) {
     .project h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         text-align: center;
-        width: 45.6vw;
+        width: 57vw;
     }
 
     .project-img {
         width: 80vw;
-        height: 32vh;
+        /*height: 32vh;*/
         object-fit: cover;
         /*object-position: center;*/
     }
