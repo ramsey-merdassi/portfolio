@@ -205,12 +205,20 @@ nav {
 
     .project-img {
         width: 80vw;
+        height: 32vh;
+        object-fit: cover;
+        /*object-position: center;*/
     }
 
   .bx-chevron-left, .bx-chevron-right {
         font-size: 2rem;
         cursor: pointer;
     }
+
+  .bx-link-external, #github-repo {
+    font-size: 1.3rem;
+    /*margin: 0 1rem;*/
+}
 
     .project-description {
         width: 80vw;
