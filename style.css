@@ -103,7 +103,7 @@ nav {
 @media screen and (max-width: 689px) {
 
     .about-me p, ul {
-        width: 92vw;
+        width: 90vw;
         /*font-size: 0.9rem;*/
     }
 }
@@ -223,7 +223,7 @@ nav {
     }
 
     .project-description {
-        width: 92vw;
+        width: 90vw;
         /*font-size: 0.9rem;*/
     }
 }
