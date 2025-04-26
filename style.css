@@ -23,7 +23,7 @@ a {
 }
 
 .name-title {
-    margin: 2rem;
+    margin: 2rem 1rem ;
 }
 
 a:visited {
@@ -65,7 +65,7 @@ nav {
         margin-top: 1rem;
         margin-right: 1rem;
         width: 2rem;
-        height: 8rem;
+        height: 7.2rem;
         /*background-color: orange;*/
     }
 
@@ -104,14 +104,12 @@ nav {
 
     .about-me p, ul {
         width: 90vw;
-        /*font-size: 0.9rem;*/
     }
 }
 
 @media screen and (min-width: 690px) and (max-width: 770px) {
     .about-me p, ul {
         width: 76vw;
-        /*font-size: 0.9rem;*/
     }
 }
 
@@ -207,9 +205,7 @@ nav {
 
     .project-img {
         width: 80vw;
-        /*height: 32vh;*/
         object-fit: cover;
-        /*object-position: center;*/
     }
 
   .bx-chevron-left, .bx-chevron-right {
@@ -218,13 +214,11 @@ nav {
     }
 
   .bx-link-external, #github-repo {
-        font-size: 1.4rem;
-        /*margin: 0 1rem;*/
+      font-size: 1.4rem;
     }
 
     .project-description {
         width: 90vw;
-        /*font-size: 0.9rem;*/
     }
 }
 
@@ -274,13 +268,11 @@ footer h3, footer i {
     }
 
     .email {
-        /*display: flex;*/
         width: 96vw;
         margin-top: 1rem;
     }
 
     .phone-no {
-        /*padding-right: 5.4rem;*/
         width: 96vw;
     }
 }
