@@ -208,7 +208,7 @@ nav {
     .project-img {
         width: 80vw;
         /*height: 32vh;*/
-        object-fit: none;
+        object-fit: cover;
         /*object-position: center;*/
     }
 
