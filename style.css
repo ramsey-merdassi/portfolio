@@ -13,6 +13,7 @@ body {
 a {
     text-decoration: none;
     color: #212121;
+    font-weight: 400;
 }
 
 /*nav bar*/
@@ -23,7 +24,7 @@ a {
 }
 
 .name-title {
-    margin: 2rem 1rem ;
+    margin: 2rem 2rem ;
 }
 
 a:visited {
@@ -170,7 +171,7 @@ nav {
 
 .project-img {
     width: 36vw;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 41vh;
 }
 
@@ -180,10 +181,20 @@ nav {
     /*background-color: blue;*/
 }
 
-.bx-link-external, #github-repo {
+.bx-link-external, .github-repo {
     font-size: 1.6rem;
     margin: 0 1rem;
     color: #FFF;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.project a {
+    width: 2.8rem;
 }
 
 .project-description {
@@ -213,7 +224,7 @@ nav {
         cursor: pointer;
     }
 
-  .bx-link-external, #github-repo {
+  .bx-link-external, .github-repo {
       font-size: 1.4rem;
     }
 
