@@ -55,7 +55,7 @@ nav {
     .name-title {
         width: 9rem;
         height: 6rem;
-        margin-top: 2rem;
+        margin-top: 1.4rem;
         /*background-color: cyan;*/
     }
 
@@ -215,13 +215,16 @@ span {
     }
 
     .project-img {
-        width: 80vw;
-        object-fit: cover;
+        width: 90vw;
+        height: 30vh;
+        /*object-fit: xcontain;*/
+        /*object-positixon: left;*/
     }
 
   .bx-chevron-left, .bx-chevron-right {
-        font-size: 2rem;
-        cursor: pointer;
+        /*font-size: 2rem;*/
+        /*cursor: pointer;*/
+        display: none;
     }
 
   .bx-link-external, .github-repo {
@@ -233,7 +236,49 @@ span {
     }
 }
 
+@media screen and (min-width: 690px) and (max-width: 770px) {
+    .project-description {
+        width: 76vw;
+    }
 
+     .project-img {
+        width: 80vw;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 950px) {
+    .project-description {
+        width: 70vw;
+    }
+
+     .project-img {
+        width: 80vw;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1068px) {
+    .project-description {
+        width: 66vw;
+    }
+
+     .project-img {
+        width: 80vw;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1069px) and (max-width: 1250px) {
+    .project-description {
+        width: 60vw;
+    }
+
+     .project-img {
+        width: 80vw;
+        object-fit: cover;
+    }
+}
 
 
 
@@ -285,5 +330,9 @@ footer h3, footer i {
 
     .phone-no {
         width: 96vw;
+    }
+
+    .bxs-envelope, .bxs-phone {
+        margin-left: 0.8rem;
     }
 }
