@@ -49,6 +49,10 @@ nav {
 }
 
 @media screen and (max-width: 554px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
     nav {
        height: 24vh;
     }
@@ -103,6 +107,10 @@ nav {
 }
 
 @media screen and (max-width: 689px) {
+
+    body {
+        overflow-x: hidden !important;
+    }
 
     .about-me p, ul {
         width: 90vw;
