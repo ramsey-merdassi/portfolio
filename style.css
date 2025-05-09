@@ -7,6 +7,7 @@
 body {
     margin: 0;
     background-color: #009688;
+    overflow-x: hidden !important;
 }
 
 /*removes underlines*/
