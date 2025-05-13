@@ -7,7 +7,6 @@
 body {
     margin: 0;
     background-color: #009688;
-    overflow-x: hidden !important;
 }
 
 /*removes underlines*/
@@ -58,7 +57,6 @@ nav {
         height: 6rem;
         margin-top: 1.5rem;
         margin-left: 1.2rem;
-        /*background-color: cyan;*/
     }
 
     .nav-icons {
@@ -69,7 +67,6 @@ nav {
         margin-right: 1rem;
         width: 2rem;
         height: 7.3rem;
-        /*background-color: orange;*/
     }
 
     .bx-download, #github, .bxl-linkedin {
@@ -85,7 +82,6 @@ nav {
     align-items: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    /*background-color: green;*/
 }
 
 .about-me p, ul {
@@ -96,7 +92,6 @@ nav {
     margin-bottom: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    /*background-color: blue;*/
 }
 
 .about-me a {
@@ -139,7 +134,6 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
-    /*background-color: #B3E5FC;*/
 }
 
 .project {
@@ -149,22 +143,18 @@ nav {
     width: 54vw;
     padding-bottom: 0.4rem;
     color: #FFF;
-    /*background-color: #607D8B;*/
 }
 
 .project h2 {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    /*background-color: green;*/
+    text-align: center;
 }
 
 .carousel {
     display: flex;
     align-items: center;
-        /*height: 41vh;*/
-
-    background-color: red;
 }
 
 .bx-chevron-left, .bx-chevron-right {
@@ -181,7 +171,6 @@ nav {
 .project-links {
     display: flex;
     margin-top: 1rem;
-    /*background-color: blue;*/
 }
 
 .bx-link-external, .github-repo {
@@ -207,13 +196,11 @@ span {
     color: #FFF;
     margin: 0;
     padding: 1rem 0;
-    /*background-color: orange;*/
 }
 
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 504px) {
     .project h2 {
         font-size: 1.4rem;
-        text-align: center;
         width: 57vw;
     }
 
@@ -222,14 +209,47 @@ span {
         height: 36vh;
     }
 
-  .bx-chevron-left, .bx-chevron-right {
+    .bx-chevron-left, .bx-chevron-right {
         display: none;
     }
 
-  .bx-link-external, .github-repo {
-      font-size: 1.4rem;
+    .bx-link-external, .github-repo {
+        font-size: 1.4rem;
     }
+}
 
+@media screen and (min-width: 505px) and (max-width: 657px) {
+    .project-img {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 658px) and (max-width: 783px) {
+    .project-img {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 784px) and (max-width: 889px) {
+    .project-img {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 890px) and (max-width: 1056px) {
+    .project-img {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1057px) and (max-width: 1250px) {
+    .project-img {
+        width: 40vw;
+    }
+}
+
+
+@media screen and (max-width: 689px) {
     .project-description {
         width: 90vw;
     }
@@ -239,21 +259,11 @@ span {
     .project-description {
         width: 76vw;
     }
-
-     .project-img {
-        width: 80vw;
-        object-fit: cover;
-    }
 }
 
 @media screen and (min-width: 771px) and (max-width: 950px) {
     .project-description {
         width: 70vw;
-    }
-
-     .project-img {
-        width: 80vw;
-        object-fit: cover;
     }
 }
 
@@ -261,25 +271,13 @@ span {
     .project-description {
         width: 66vw;
     }
-
-     .project-img {
-        width: 80vw;
-        object-fit: cover;
-    }
 }
 
 @media screen and (min-width: 1069px) and (max-width: 1250px) {
     .project-description {
         width: 60vw;
     }
-
-     .project-img {
-        width: 80vw;
-        object-fit: cover;
-    }
 }
-
-
 
 /*footer*/
 footer {
@@ -304,12 +302,10 @@ footer h3, footer i {
 
 .email {
     display: flex;
-    /*background-color: orange;*/
 }
 
 .phone-no {
     display: flex;
-    /*background-color: yellow;*/
 }
 
 @media screen and (max-width: 554px) {
