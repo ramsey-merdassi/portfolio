@@ -57,6 +57,7 @@ nav {
         width: 9rem;
         height: 6rem;
         margin-top: 1.5rem;
+        margin-left: 1.2rem;
         /*background-color: cyan;*/
     }
 
@@ -161,7 +162,9 @@ nav {
 .carousel {
     display: flex;
     align-items: center;
-    /*background-color: red;*/
+        /*height: 41vh;*/
+
+    background-color: red;
 }
 
 .bx-chevron-left, .bx-chevron-right {
@@ -216,7 +219,7 @@ span {
 
     .project-img {
         width: 90vw;
-        height: 40vh;
+        height: 30vh;
     }
 
   .bx-chevron-left, .bx-chevron-right {
