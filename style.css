@@ -137,7 +137,7 @@ nav {
 .bx-chevron-left, .bx-chevron-right {
     font-size: 3rem;
     cursor: pointer;
-    color: red;
+    color: #000;
 }
 
 .project-img {
