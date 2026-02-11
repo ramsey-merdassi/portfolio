@@ -26,14 +26,15 @@ a {
 
 .name-title {
     margin: 2rem 2rem ;
+    color: #FFF;
 }
 
 a:visited {
     color: #000;
 }
 
-.bx-download, #github, .bxl-linkedin {
-    color: #000;
+#github {
+    color: #FFF;
     font-size: 2rem;
     padding-left: 1rem;
 }
@@ -41,7 +42,7 @@ a:visited {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #B2DFDB;
+    background-color: #000;
 }
 
 .github-icon {
@@ -148,12 +149,13 @@ nav {
 .project-links {
     display: flex;
     margin-top: 1rem;
+
 }
 
-.bx-link-external, .github-repo {
+.github-repo {
     font-size: 1.6rem;
     margin: 0 1rem;
-    color: #FFF;
+    color: #000;
 }
 
 span {
