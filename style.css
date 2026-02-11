@@ -263,7 +263,7 @@ footer {
     height: 8rem;
     display: flex;
     justify-content: center;
-    background-color: #B2DFDB;
+    background-color: #2c2d2d;
 }
 
 footer h3, footer i {
@@ -271,19 +271,16 @@ footer h3, footer i {
     font-family: 'Source Code Pro', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    color: #fff;
 }
 
-.bxs-envelope, .bxs-phone {
+.bxs-envelope {
     font-size: 1.2rem;
     margin-left: 1.4rem;
     margin-right: 0.3rem;
 }
 
 .email {
-    display: flex;
-}
-
-.phone-no {
     display: flex;
 }
 
@@ -302,11 +299,7 @@ footer h3, footer i {
         margin-top: 1rem;
     }
 
-    .phone-no {
-        width: 96vw;
-    }
-
-    .bxs-envelope, .bxs-phone {
+    .bxs-envelope {
         margin-left: 0.8rem;
     }
 }
