@@ -6,7 +6,8 @@
 /*removes default margin*/
 body {
     margin: 0;
-    background-color: #009688;
+    /*background-color: #009688;*/
+    background-color: #FFF;
 }
 
 /*removes underlines*/
@@ -169,7 +170,7 @@ span {
     width: 54vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    color: #FFF;
+    color: #000;
     margin: 0;
     padding: 1rem 0;
 }
