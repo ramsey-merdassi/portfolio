@@ -111,7 +111,7 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    /*margin-top: 3rem;*/
 }
 
 .project {
@@ -121,18 +121,14 @@ nav {
     width: 54vw;
     padding-bottom: 0.4rem;
     color: #FFF;
+    margin-top: 3rem;
 }
 
 .project h2 {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    text-align: center;
-    /*margin-top: 3rem;*/
-}
-
-.carousel {
-    display: flex;
+    text-align: center;}
     align-items: center;
 }
 
