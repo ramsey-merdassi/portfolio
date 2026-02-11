@@ -43,7 +43,7 @@ nav {
     background-color: #B2DFDB;
 }
 
-.nav-icons {
+.github-icon {
     margin: 2.8rem 2rem;
 }
 
@@ -59,7 +59,7 @@ nav {
         margin-left: 1.2rem;
     }
 
-    .nav-icons {
+    .github-icon {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
